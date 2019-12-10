@@ -1,0 +1,165 @@
+/*--- POP OUT FORM --*/
+
+.cfx-pop-out-form {
+  position:fixed;
+  top:10%;
+  right:0;
+  z-index:10011;
+  -webkit-box-shadow: -4px 3px 9px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: -4px 3px 9px -3px rgba(0,0,0,0.75);
+  box-shadow: -4px 3px 9px -3px rgba(0,0,0,0.75);
+ 
+ 
+}
+
+.cfx-pop-out-form form {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color:rgb(238, 28, 37);
+ 
+}
+
+.pop-out-text {
+   width: 40%;
+  float: left;
+}
+
+/*---
+Close button
+---*/
+.cfx-pop-out-form a.close {
+  position: absolute;
+  left: 20px;
+}
+
+/*---
+CTA button & links
+---*/
+
+a.cfx-pop-out-form-button {
+  position:fixed;
+  z-index:9999;
+  right: 0;
+  top: 40%;
+  background-color: red;
+  height:150px;
+  width: 45px;
+  color: #333;
+  text-align:center;
+  color: #FFF;
+  line-height: 45px;
+  transition: width 0.3s;
+  background-color:rgb(238, 28, 37);
+  -webkit-box-shadow: -4px 3px 9px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: -4px 3px 9px -3px rgba(0,0,0,0.75);
+  box-shadow: -4px 3px 9px -3px rgba(0,0,0,0.75);
+}
+
+.button-text {
+  position:absolute;
+  top: 45px;
+  transform: rotate(-90deg);
+  transform-origin: 35% 116%;
+  letter-spacing:0.7px;
+  font-weight: bold;
+  display:block;
+  width:150px;
+}
+
+a.cfx-pop-out-form-close {
+  color: #FFF;
+  padding: 0 0.5em;
+  border: 1px solid #FFF;
+  border: 1px solid: #FFF;
+  float:right;
+  height: 40px;
+  line-height: 40px;
+}
+
+a.cfx-pop-out-form-close:hover {
+  color: #FFFFFF;
+}
+
+a.cfx-pop-out-form-button:hover {
+  width: 60px;
+  color: #FFFFFF;
+}
+
+/*--
+Form fields
+--*/
+
+.cfx-pop-out-form input[type="text"], .cfx-pop-out-form input[type="email"] {
+  height: 30px;
+  width: 100%;
+}
+
+.cfx-pop-out-form .wpcf7-form textarea {
+    height:100px;
+}
+
+.cfx-pop-out-form input[type="submit"] {
+  background-color: #000000;
+}
+
+ .cfx-pop-out-form textarea {
+  height: 100px;
+}
+
+ .cfx-pop-out-form p {
+   margin:10px 0;
+ }
+
+.hidden {
+  display:none;
+}
+
+
+/*-- Typogrpahy
+-- */
+
+.cfx-pop-out-form .wpcf7-form .wpcf7-response-output {
+  font-size:0.8em;
+  padding: 0 20px 0 0;
+}
+
+.cfx-pop-out-form span.wpcf7-not-valid-tip {
+  color:#FFF;
+}
+
+.cfx-pop-out-form .wpcf7-validation-errors {
+  color: #FFF;
+}
+
+#footer .cfx-pop-out-form {
+  text-align:left;
+}
+
+.cfx-pop-out-form label, .cfx-pop-out-form a {
+  color: #FFF;
+}
+
+.cfx-pop-out-form h2 {
+  margin: 16px 0 20px 0;
+  font-size: 1.5rem;
+  color: #FFF;
+}
+
+
+/*-- Media Queries
+-- */
+
+@media screen and (max-width:500px) {
+	
+	.cfx-pop-out-form {
+		top:0;
+
+	}
+  	
+   .cfx-pop-out-form form {
+    overflow: scroll;
+  	height: 90vh;
+  }
+	
+}
